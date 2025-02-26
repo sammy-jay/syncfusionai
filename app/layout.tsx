@@ -9,7 +9,7 @@ import { Navbar } from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SyncspaceHQ",
+  title: "Syncfusion AI",
   description: "Leading IT Solutions & Services Provider",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} antialiased`}>
-        <Navbar/>
+        <Navbar />
         {children}
         <Script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" />
         <Script src="/chatbot.js" />

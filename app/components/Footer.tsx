@@ -33,7 +33,7 @@ export function Footer() {
           className="flex justify-center mb-16"
         >
           <span className="text-2xl font-medium text-[#FFA500]">
-            SyncspaceHQ
+            Syncfusion AI
           </span>
         </motion.div>
 
@@ -101,7 +101,7 @@ export function Footer() {
             transition={{ delay: 0.6 }}
             className="text-gray-400 text-base"
           >
-            Copyright SyncspaceHQ. All right reserved.
+            Copyright Syncfusion AI. All right reserved.
           </motion.div>
         </div>
       </div>

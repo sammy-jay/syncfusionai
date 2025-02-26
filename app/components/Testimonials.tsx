@@ -9,7 +9,7 @@ const testimonial = {
     name: 'Stanbic IBTC Bank',
     logo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2787&auto=format&fit=crop'
   },
-  quote: "SyncspaceHQ has transformed our IT infrastructure with their comprehensive solutions and exceptional support.",
+  quote: "Syncfusion AI has transformed our IT infrastructure with their comprehensive solutions and exceptional support.",
   author: {
     name: 'James Anderson',
     role: 'Chief Technology Officer',

@@ -16,7 +16,7 @@ export const WhoAreWe = () => {
                 </motion.div>
                 {/* <h2 className="text-3xlmd:text-5xlfont-bold text-white">About Us</h2> */}
                 <p className="mt-4 leading-10 text-3xl md:text-4xl lg:text-5xl text-gray-300">
-                    Hi, we're SyncspaceHQ ✨ We craft cutting edge AI solutions to make organizations more effective and competitive. We do so with a motivated team of 9 experts focused on building world-class solutions.
+                    Hi, we're Syncfusion AI ✨ We craft cutting edge AI solutions to make organizations more effective and competitive. We do so with a motivated team of 9 experts focused on building world-class solutions.
                 </p>
 
             </div>

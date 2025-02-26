@@ -6,7 +6,7 @@ import { useState } from 'react'
 const faqs = [
   {
     question: "What IT services do you provide?",
-    answer: "At SyncspaceHQ, we offer a comprehensive range of IT services including enterprise software solutions, OEM software licensing, hardware procurement, network infrastructure, IT security audits, web development, and ongoing technical support."
+    answer: "At Syncfusion AI, we offer a comprehensive range of IT services including enterprise software solutions, OEM software licensing, hardware procurement, network infrastructure, IT security audits, web development, and ongoing technical support."
   },
   {
     question: "How do you ensure data security?",

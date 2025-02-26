@@ -12,7 +12,7 @@ export default function Contact() {
             Our Commitment to Service
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed mb-8">
-            At SyncspaceHQ, we are committed to providing comprehensive IT solutions
+            At Syncfusion AI, we are committed to providing comprehensive IT solutions
             that empower businesses to thrive in the digital age. Our team of experts is
             ready to assist you with all your technology needs, from infrastructure setup
             to ongoing support.

@@ -35,8 +35,8 @@ const contactInfo = [
       </svg>
     ),
     details: [
-      'support@SyncspaceHQ.com',
-      'info@SyncspaceHQ.com'
+      'support@Syncfusion AI.com',
+      'info@Syncfusion AI.com'
     ]
   }
 ]

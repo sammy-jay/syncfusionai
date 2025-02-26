@@ -7,7 +7,7 @@ import useScrollPosition from '../hooks/useScrollPosition'
 export function Navbar() {
   const { activeSection } = useScrollPosition();
   console.log(activeSection);
-  
+
   return (
     <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 md:px-6">
       <nav className="w-auto bg-black/50 backdrop-blur-sm rounded-full border border-gray-800/50">
@@ -16,7 +16,7 @@ export function Navbar() {
             href="/"
             className="text-[#FFA500] text-[18px] font-bold text-base hover:text-[#FFA500]/90 transition-colors"
           >
-            SyncspaceHQ
+            Syncfusion AI
           </Link>
 
           {/* Desktop Menu */}
