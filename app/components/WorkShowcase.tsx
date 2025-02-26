@@ -108,7 +108,7 @@ export function WorkShowcase() {
             }}
             transition={{
               x: {
-                duration: 50,
+                duration: 150,
                 repeat: Infinity,
                 ease: "linear"
               }

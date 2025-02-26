@@ -87,21 +87,73 @@ export function Testimonials() {
 
           {/* Main Testimonial */}
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-              {/* Left - Image */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0">
+              {/* Left - Content */}
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="relative aspect-[4/5] lg:aspect-auto rounded-[32px] overflow-hidden gradient-border"
+                className="flex flex-col justify-center mr-4 lg:border-r-[2px] lg:border-gray-800/70"
               >
-                <Image
-                  src={testimonial.author.image}
-                  alt={testimonial.author.name}
-                  fill
-                  className="object-cover"
-                  priority
-                />
+                {/* Company Logo */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-3 mb-12"
+                >
+                  <div className="w-8 h-8 bg-[#FFA500] rounded-lg flex items-center justify-center">
+                    <div className="w-4 h-4 bg-black/90 rounded-sm" />
+                  </div>
+                  <span className="text-xl font-medium">{testimonial.company.name}</span>
+                </motion.div>
+
+                {/* Quote */}
+                <motion.blockquote
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                  className="text-2xl md:text-3xl font-medium leading-tight mb-12"
+                >
+                  "{testimonial.quote}"
+                </motion.blockquote>
+
+                {/* Author */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="mb-12"
+                >
+                  <div className="text-xl font-medium mb-1">
+                    {testimonial.author.name}
+                  </div>
+                  <div className="text-gray-400">
+                    {testimonial.author.role}
+                  </div>
+                </motion.div>
+
+                {/* Stats */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                  className="grid grid-cols-2 gap-8"
+                >
+                  {testimonial.stats.map((stat, index) => (
+                    <div key={index}>
+                      <div className="text-3xl font-medium mb-2 text-[#FFA500]">
+                        {stat.value}
+                      </div>
+                      <div className="text-gray-400">
+                        {stat.label}
+                      </div>
+                    </div>
+                  ))}
+                </motion.div>
               </motion.div>
 
               {/* Right - Content */}
@@ -130,7 +182,7 @@ export function Testimonials() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
-                  className="text-3xl md:text-4xl font-medium leading-tight mb-12"
+                  className="text-2xl md:text-3xl font-medium leading-tight mb-12"
                 >
                   "{testimonial.quote}"
                 </motion.blockquote>
