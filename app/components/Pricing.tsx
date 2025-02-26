@@ -85,7 +85,7 @@ export function Pricing() {
 
         <div className="mt-12 flex flex-col items-center lg:flex-row justify-center gap-8">
           {pricingPlans.map((plan, index) => (
-            <div key={index} className='rounded-lg p-3 bg-transparent border-[1px] border-gray-800 w-[380px] md:max-w-[350px]'>
+            <div key={index} className='rounded-lg p-3 bg-transparent border-[1px] border-gray-800 w-[85vw] md:max-w-[350px]'>
               <motion.div
                 className="bg-[#0a0a0a]  rounded-lg p-6 flex flex-col shadow-lg transition-transform transform"
                 initial={{ opacity: 0 }}

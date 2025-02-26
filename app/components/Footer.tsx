@@ -101,7 +101,7 @@ export function Footer() {
             transition={{ delay: 0.6 }}
             className="text-gray-400 text-base"
           >
-            Copyright Syncfusion AI. All right reserved.
+            &copy; {new Date().getFullYear()} Syncfusion AI. All right reserved.
           </motion.div>
         </div>
       </div>
