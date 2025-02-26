@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #FFA500;
+  --section-bg: #0A0A0A;
+  --card-bg: rgba(23, 23, 23, 0.7);
+}
+
+body {
+  background-color: #000;
+  color: white;
+  background-image: radial-gradient(circle, rgba(255, 140, 0, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.section-bg {
+  background-color: var(--section-bg);
+}
+
+.card-bg {
+  background-color: var(--card-bg);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* Adjust based on your navbar height */
+}
+
+/* Slant Div */
+.slant {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  /* Adjust height as needed */
+  background: linear-gradient(to right, #FF8C00, black);
+  /* Darker orange */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Circle Div */
+.circle {
+  position: absolute;
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+  /* Adjust size as needed */
+  background: linear-gradient(to right, #FF8C00, black);
+  /* Darker orange */
+  border-radius: 50%;
+}
+
+/* Box Div */
+.box {
+  position: absolute;
+  width: 100px;
+  /* Adjust size as needed */
+  height: 100px;
+  /* Adjust size as needed */
+  background: linear-gradient(to right, #FF8C00, black);
+  /* Darker orange */
+  border-radius: 10px;
+  /* Optional for rounded corners */
+}
+
+/* Stripes Background */
+/* Stripes Background */
+.stripes {
+  position: absolute;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(45deg,
+      rgba(255, 140, 0, 0.3),
+      rgba(255, 140, 0, 0.3) 40px,
+      rgba(0, 0, 0, 0.3) 50px,
+      rgba(0, 0, 0, 0.3) 300px);
+  z-index: -1;
+  /* Ensure it stays behind other content */
+  animation: shimmer 2s infinite;
+  /* Add roll and orbit animations */
+  ;
+  /* Add shimmer animation */
+  backdrop-filter: blur(500px);
+  /* Apply blur effect */
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes roll {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Orbiting Animation */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
