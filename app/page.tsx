@@ -55,7 +55,7 @@ export default function Home() {
                 <span className="text-white">We elevate your business</span>
               </h1>
               <h2 className=" text-5xl md:text-6xl font-bold text-white">
-                with <DynamicText delay={2000} words={['custom AI solutions', 'automated workflows', 'intelligent lead generation', ]} />.
+                with <DynamicText delay={2500} words={['custom AI solutions', 'automated workflows', 'intelligent lead generation', ]} />
               </h2>
             </motion.div>
 
