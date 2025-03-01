@@ -73,17 +73,17 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="mt-8 md:mt-14 flex justify-center flex-col md:flex-row gap-4"
+              className="mt-8 md:mt-14 flex justify-center items-center flex-col md:flex-row gap-4"
             >
               <Link
                 href="#services"
-                className="transition-colors bg-transparent border-[1px] border-[#FFA500] text-white hover:text-black px-8 py-3 rounded-lg font-medium hover:bg-[#FFA500]/90"
+                className="transition-colors bg-transparent border-[1px] w-max border-[#FFA500] text-white hover:text-black px-8 py-3 rounded-lg font-medium hover:bg-[#FFA500]/90"
               >
                 Explore Services
               </Link>
               <Link
                 href="/contact"
-                className="bg-gradient-to-br from-[#FFA500] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#FFA500]/70 "
+                className="bg-gradient-to-br from-[#FFA500] text-white w-max px-8 py-3 rounded-lg font-medium hover:bg-[#FFA500]/70 "
               >
                 Get a Strategy Session
               </Link>
