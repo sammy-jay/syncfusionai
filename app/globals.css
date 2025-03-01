@@ -5,6 +5,9 @@
 
 :root {
   --primary-blue: #FFA500;
+  --fill-color: #FFA500;
+  --globe-default-fill-color: #0A0A0A;
+  --globe-default-stroke-color: #0A0A0A;
   --section-bg: #0A0A0A;
   --card-bg: rgba(23, 23, 23, 0.7);
 }
