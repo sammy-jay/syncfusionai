@@ -7,6 +7,8 @@
             --chat--color-secondary: var(--n8n-chat-secondary-color, #6b3fd4);
             --chat--color-background: var(--n8n-chat-background-color, #ffffff);
             --chat--color-font: var(--n8n-chat-font-color, #333333);
+            --chat--message-bg-user: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+            --chat--message-bg-bot: var(--chat--color-background);
             font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
@@ -16,13 +18,13 @@
             right: 20px;
             z-index: 1000;
             display: none;
-            width: 85vw;
-            max-width: 380px;
-            height: 85vh;
+            width: 90vw;
+            max-width: 400px;
+            height: 90vh;
             background: var(--chat--color-background);
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(255, 144, 79, 0.15);
-            border: 1px solid rgba(255, 144, 79, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 12px 48px rgba(255, 144, 79, 0.25);
+            border: 1px solid rgba(255, 144, 79, 0.25);
             overflow: hidden;
             font-family: inherit;
         }
@@ -61,7 +63,7 @@
             justify-content: center;
             transition: color 0.2s;
             font-size: 20px;
-            opacity: 0.6;
+            opacity: 0.7;
         }
 
         .n8n-chat-widget .close-button:hover {
@@ -75,7 +77,7 @@
 
         .n8n-chat-widget .brand-header span {
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--chat--color-font);
         }
 
@@ -92,10 +94,10 @@
 
         .n8n-chat-widget .welcome-text {
             font-size: 24px;
-            font-weight: 600;
+            font-weight: 700;
             color: var(--chat--color-font);
             margin-bottom: 24px;
-            line-height: 1.3;
+            line-height: 1.4;
         }
 
         .n8n-chat-widget .new-chat-btn {
@@ -112,7 +114,7 @@
             cursor: pointer;
             font-size: 16px;
             transition: transform 0.3s;
-            font-weight: 500;
+            font-weight: 600;
             font-family: inherit;
             margin-bottom: 12px;
         }
@@ -146,56 +148,68 @@
         .n8n-chat-widget .chat-messages {
             flex: 1;
             overflow-y: auto;
-            padding: 20px;
+            padding: 16px;
             background: var(--chat--color-background);
             display: flex;
             flex-direction: column;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .n8n-chat-widget .chat-messages::-webkit-scrollbar {
+            display: none;
         }
 
         .n8n-chat-widget .chat-message {
-            padding: 12px 16px;
+            padding: 12px 14px;
             margin: 8px 0;
             border-radius: 12px;
-            max-width: 80%;
+            max-width: 85%;
             word-wrap: break-word;
             font-size: 14px;
             line-height: 1.5;
         }
 
         .n8n-chat-widget .chat-message.user {
-            background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+            background: var(--chat--message-bg-user);
             color: white;
             align-self: flex-end;
-            box-shadow: 0 4px 12px rgba(255, 144, 79, 0.15);
             border: none;
         }
 
         .n8n-chat-widget .chat-message.bot {
-            background: var(--chat--color-background);
-            border: 1px solid rgba(133, 79, 255, 0.2);
+            background: var(--chat--message-bg-bot);
+            border: 1px solid rgba(255, 144, 79, 0.2);
             color: var(--chat--color-font);
             align-self: flex-start;
-            box-shadow: 0 4px 12px rgba(255, 144, 79, 0.15);
         }
 
         .n8n-chat-widget .chat-input {
-            padding: 16px;
+            padding: 12px;
             background: var(--chat--color-background);
             border-top: 1px solid rgba(133, 79, 255, 0.1);
             display: flex;
-            gap: 8px;
+            align-items: center;
+            position: relative; /* needed for positioning */
         }
 
         .n8n-chat-widget .chat-input textarea {
             flex: 1;
-            padding: 12px;
-            border: 1px solid rgba(133, 79, 255, 0.2);
+            padding: 10px;
+            border: 1px solid rgba(255, 144, 79, 0.2);
             border-radius: 8px;
             background: var(--chat--color-background);
             color: var(--chat--color-font);
             resize: none;
             font-family: inherit;
             font-size: 14px;
+            line-height: 1.4;
+            height: 40px;
+            overflow: hidden; /* Hide scrollbar */
+            overflow-wrap: break-word;
+            word-break: break-word;
+            margin-right: 70px; /* Space for buttons */
         }
 
         .n8n-chat-widget .chat-input textarea::placeholder {
@@ -203,16 +217,103 @@
             opacity: 0.6;
         }
 
+        /* Style for file and emoji and send buttons */
+        .n8n-chat-widget .chat-input .action-buttons {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .n8n-chat-widget .chat-input .action-button {
+            background: none;
+            border: none;
+            color: var(--chat--color-font);
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 50%;
+            transition: background-color 0.2s;
+        }
+
+        .n8n-chat-widget .chat-input .action-button:hover {
+            background-color: rgba(255, 144, 79, 0.2);
+        }
+
+        .n8n-chat-widget .chat-input input[type="file"] {
+            display: none; /* Hide the actual file input */
+        }
+
+        .n8n-chat-widget .chat-input label {
+            cursor: pointer; /* Make label clickable */
+        }
+
+        .n8n-chat-widget .chat-input .image-preview {
+            position: absolute;
+            bottom: 45px; /* Position to the right of emoji button */
+            left: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+            max-width: 50px;
+            max-height: 50px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: none;
+            pointer-events: none; /* Disable interaction with the image */
+        }
+
+        .n8n-chat-widget .chat-input .image-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Style for emoji picker */
+        .n8n-chat-widget .chat-input .emoji-picker-container {
+            position: absolute;
+            top: auto;
+            bottom: 45px;
+            right: 50px;
+            transform: translateX(-50%);
+            z-index: 1001;
+            background-color: var(--chat--color-background);
+            border: 1px solid rgba(255, 144, 79, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(255, 144, 79, 0.2);
+            display: none;
+        }
+
+        .n8n-chat-widget .chat-input .emoji-picker-container.open {
+            display: block;
+        }
+
+        .n8n-chat-widget .chat-input .emoji-picker-container button {
+            border: none;
+            background: none;
+            padding: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .n8n-chat-widget .chat-input .emoji-picker-container button:hover {
+            background-color: rgba(133, 79, 255, 0.1);
+        }
+
         .n8n-chat-widget .chat-input button {
             background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             color: white;
             border: none;
             border-radius: 8px;
-            padding: 0 20px;
+            padding: 8px 16px; /* Reduced padding */
             cursor: pointer;
             transition: transform 0.2s;
             font-family: inherit;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 14px; /* Reduced font size */
+            white-space: nowrap; /* Prevent text wrapping */
         }
 
         .n8n-chat-widget .chat-input button:hover {
@@ -274,6 +375,12 @@
         .n8n-chat-widget .chat-footer a:hover {
             opacity: 1;
         }
+
+        /* New rules for better aesthetics */
+        .n8n-chat-widget .chat-input {
+            border-radius: 10px; /* Rounded input */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
     `;
 
     // Load Geist font
@@ -299,7 +406,7 @@
             welcomeText: '',
             responseTimeText: '',
             poweredBy: {
-                text: 'Powered by Syncspace',
+                text: 'Powered by Teros AI',
                 link: '/'
             }
         },
@@ -385,8 +492,23 @@
             </div>
             <div class="chat-messages"></div>
             <div class="chat-input">
+                <div class="input-actions">
+                    
+                    
+                  </div>
                 <textarea placeholder="Type your message here..." rows="1"></textarea>
-                <button type="submit">Send</button>
+                 <div class="action-buttons">
+                 <div class="image-preview">
+                 <img src="#" alt="Image preview" style="display:none;"/>
+                </div>
+                     <label for="file-upload" class="action-button">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                     </label>
+                     <input type="file" id="file-upload" accept="image/*"/>
+                     <button type="submit" class="action-button">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+                     </button>
+                     </div>
             </div>
             <div class="chat-footer">
                 <a href="${config.branding.poweredBy.link}" target="_blank">${config.branding.poweredBy.text}</a>
@@ -401,7 +523,8 @@
     toggleButton.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2.5 21.5l4.5-.838A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.476 0-2.886-.313-4.156-.878l-3.156.586.586-3.156A7.962 7.962 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
-        </svg><span class="margin-left: 2px;">Ask Sam</span>`;
+        </svg>
+        Ask Sam`;
 
     widgetContainer.appendChild(chatContainer);
     widgetContainer.appendChild(toggleButton);
@@ -412,14 +535,15 @@
     const messagesContainer = chatContainer.querySelector('.chat-messages');
     const textarea = chatContainer.querySelector('textarea');
     const sendButton = chatContainer.querySelector('button[type="submit"]');
+    const fileInput = chatContainer.querySelector('input[type="file"]');
+    const imagePreview = chatContainer.querySelector('.chat-input .image-preview');
+    const imagePreviewImg = chatContainer.querySelector('.chat-input .image-preview img');
 
-    // Function to generate a UUID
+
     function generateUUID() {
-        // Check if crypto.randomUUID is available
         if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
             return crypto.randomUUID();
         } else {
-            // Fallback to a simple UUID generation
             return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
                 const r = Math.random() * 16 | 0,
                     v = c === 'x' ? r : (r & 0x3 | 0x8);
@@ -455,12 +579,8 @@
 
             const botMessageDiv = document.createElement('div');
             botMessageDiv.className = 'chat-message bot';
-            // botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
-
-            // Use Marked.js to convert Markdown to HTML
-            const markdownText = Array.isArray(responseData) ? responseData[0].output : responseData.output; // Get the Markdown content
+            const markdownText = Array.isArray(responseData) ? responseData[0].output : responseData.output;
             const htmlContent = marked.parse(markdownText); // Convert to HTML
-
             botMessageDiv.innerHTML = htmlContent;
 
             messagesContainer.appendChild(botMessageDiv);
@@ -470,37 +590,42 @@
         }
     }
 
-    async function sendMessage(message) {
-        const messageData = {
-            action: "sendMessage",
-            sessionId: currentSessionId,
-            route: config.webhook.route,
-            chatInput: message,
-            metadata: {
-                userId: ""
-            }
-        };
+    async function sendMessage(message, file = null) {
+        const formData = new FormData();
+        formData.append('action', 'sendMessage');
+        formData.append('sessionId', currentSessionId);
+        formData.append('route', config.webhook.route);
+        formData.append('chatInput', message);
+        formData.append('metadata', JSON.stringify({ userId: "" })); // Stringify metadata
+
+        if (file) {
+            formData.append('file', file);
+        }
 
         const userMessageDiv = document.createElement('div');
         userMessageDiv.className = 'chat-message user';
         userMessageDiv.textContent = message;
+        if (file) {
+            const userImageDiv = document.createElement('img');
+            userImageDiv.src = URL.createObjectURL(file)
+            userMessageDiv.textContent = null;
+            userMessageDiv.appendChild(userImageDiv)
+        }
         messagesContainer.appendChild(userMessageDiv);
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
         try {
             const response = await fetch(config.webhook.url, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(messageData)
+                body: formData
             });
 
             const data = await response.json();
 
             const botMessageDiv = document.createElement('div');
             botMessageDiv.className = 'chat-message bot';
-            botMessageDiv.textContent = Array.isArray(data) ? data[0].output : data.output;
+            botMessageDiv.innerHTML = marked.parse(Array.isArray(data) ? data[0].output : data.output); // Use Marked to parse Markdown
+
             messagesContainer.appendChild(botMessageDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
         } catch (error) {
@@ -512,9 +637,14 @@
 
     sendButton.addEventListener('click', () => {
         const message = textarea.value.trim();
-        if (message) {
-            sendMessage(message);
+        const file = fileInput.files[0];
+
+        if (message || file) {
+            sendMessage(message, file);
             textarea.value = '';
+            fileInput.value = '';
+            imagePreviewImg.style.display = 'none';
+            URL.revokeObjectURL(imagePreviewImg.src);
         }
     });
 
@@ -522,9 +652,13 @@
         if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault();
             const message = textarea.value.trim();
-            if (message) {
-                sendMessage(message);
+            const file = fileInput.files[0];
+            if (message || file) {
+                sendMessage(message, file);
                 textarea.value = '';
+                fileInput.value = '';
+                imagePreviewImg.style.display = 'none';
+                URL.revokeObjectURL(imagePreviewImg.src);
             }
         }
     });
@@ -533,11 +667,25 @@
         chatContainer.classList.toggle('open');
     });
 
-    // Add close button handlers
     const closeButtons = chatContainer.querySelectorAll('.close-button');
     closeButtons.forEach(button => {
         button.addEventListener('click', () => {
             chatContainer.classList.remove('open');
         });
+    });
+
+    fileInput.addEventListener('change', () => {
+        const file = fileInput.files[0];
+
+        if (file && file.type.startsWith('image/')) {
+            imagePreviewImg.src = URL.createObjectURL(file);
+            imagePreviewImg.style.display = 'block';
+            imagePreview.style.display = 'block';
+
+        } else {
+            fileInput.value = '';
+            imagePreviewImg.style.display = 'none';
+            imagePreview.style.display = 'none';
+        }
     });
 })();

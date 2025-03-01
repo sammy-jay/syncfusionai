@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import { FaShoppingCart, FaHospital, FaIndustry, FaCode, FaUniversity, FaBriefcase, FaSearchDollar, FaUsers } from 'react-icons/fa'; // Import necessary icons
+import { FaShoppingCart, FaHospital, FaIndustry, FaCode, FaUniversity, FaBriefcase, FaSearchDollar, FaUsers, FaInternetExplorer } from 'react-icons/fa'; // Import necessary icons
 
 const works = [
   {
@@ -24,7 +24,7 @@ const works = [
       "Automated onboarding = immediate customer value.",
       "AI identifies upsell/cross-sell opportunities.",
       "Turn feedback into actionable improvements.",
-      "Predict churn + prevent it with targeted strategies."
+      "Predict churn + prevent it."
     ]
   },
   {
@@ -67,7 +67,7 @@ const works = [
     details: [
       "Automated invoice generation & payment reminders.",
       "Real-time expense, profit, & budget visibility.",
-      "Effortless financial reports & tax summaries.",
+      "Effortless financial reports.",
       "Cash flow monitoring + unusual activity alerts."
     ]
   },
@@ -118,7 +118,7 @@ export function WorkShowcase() {
             {works.map((work, index) => (
               <motion.div
                 key={index}
-                className="bg-[#0a0a0a] py-6 px-3 md:p-6 rounded-lg flex flex-col w-[370px] md:min-w-[350px]" // Increased width
+                className="bg-[#0a0a0a] py-6 px-3 md:p-6 rounded-lg flex flex-col w-[350px] md:min-w-[350px]" // Increased width
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -200,10 +200,10 @@ export function WorkShowcase() {
           <div className="flex items-center text-gray-300 flex-col">
             <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
               <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
-                <FaBriefcase className="text-3xl" />
+                <FaInternetExplorer className="text-3xl" />
               </div>
             </div>
-            <span className="mt-2 ml-2 text-sm">Professional Services</span>
+            <span className="mt-2 ml-2 text-sm">Internet</span>
           </div>
 
           <div className="flex items-center text-gray-300 flex-col">
@@ -212,7 +212,7 @@ export function WorkShowcase() {
                 <FaSearchDollar className="text-3xl" />
               </div>
             </div>
-            <span className="mt-2 ml-2 text-sm">Financial Services</span>
+            <span className="mt-2 ml-2 text-sm">Finance</span>
           </div>
 
           <div className="flex items-center text-gray-300 flex-col">
@@ -230,7 +230,7 @@ export function WorkShowcase() {
                 <FaUsers className="text-3xl" />
               </div>
             </div>
-            <span className="mt-2 ml-2 text-sm">Staffing/Recruiting</span>
+            <span className="mt-2 ml-2 text-sm">Recruiting</span>
           </div>
         </div>
       </div>
