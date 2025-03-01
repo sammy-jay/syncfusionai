@@ -318,7 +318,7 @@
         },
         branding: {
             logo: 'https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg',
-            name: 'Syncfusion AI', // Your company name
+            name: 'Teros AI', // Your company name
             welcomeText: 'Hi 👋, how can we help?', //Welcome message
             responseTimeText: 'We typically respond right away' //Response time message
         },

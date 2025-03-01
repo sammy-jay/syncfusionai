@@ -11,7 +11,7 @@ export default function Terms() {
               Term & Conditions
             </h1>
             <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto">
-              Welcome to Syncfusion AI! These terms and conditions outline the rules
+              Welcome to Teros AI! These terms and conditions outline the rules
               and regulations for the use of our website and services.
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function Terms() {
                 1. Overview
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Syncfusion AI our is an innovative agency amplified with AI, offering a range of creative and digital services.
+                Teros AI our is an innovative agency amplified with AI, offering a range of creative and digital services.
                 These Terms apply to all visitors, users, and others who access or use our services.
               </p>
             </section>
@@ -55,7 +55,7 @@ export default function Terms() {
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed">
                 All content, including but not limited to logos, designs, text, graphics, and software, is the property
-                of Syncfusion AI and is protected by intellectual property laws. Users may not use, reproduce, or distribute
+                of Teros AI and is protected by intellectual property laws. Users may not use, reproduce, or distribute
                 our content without explicit permission.
               </p>
             </section>
@@ -85,7 +85,7 @@ export default function Terms() {
                 7. Limitation of Liability
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Syncfusion AI is not liable for any indirect, incidental, special, consequential, or punitive damages
+                Teros AI is not liable for any indirect, incidental, special, consequential, or punitive damages
                 resulting from your use of our services. Our liability is limited to the amount paid for the specific
                 service in question.
               </p>
@@ -106,7 +106,7 @@ export default function Terms() {
                 9. Contact Information
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed">
-                For questions about these terms, please contact us at support@Syncfusion AI.com or through our contact form.
+                For questions about these terms, please contact us at support@Teros AI.com or through our contact form.
               </p>
             </section>
           </div>

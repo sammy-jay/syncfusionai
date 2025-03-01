@@ -6,39 +6,39 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Import icons
 
 const phases = [
   {
-    title: "Phase 1: Discovery",
-    description: "The foundation of any successful engagement begins with alignment. In this first phase, we focus on understanding your business from the inside out and determining if we're the right fit to work together.",
+    title: "Phase 1: Diagnose & Discover",
+    description: "Before we write a single line of code, we become intimately familiar with your business. We'll dissect your current processes, identify profit leaks, and pinpoint the *exact* areas where AI can create exponential growth.",
     details: [
-      "Conduct a comprehensive review of your workflows, processes, and operational challenges.",
-      "Identify opportunities for optimization and discuss your goals, constraints, and vision for success.",
-      "Ensure alignment between your needs and our capabilities, building a foundation of transparency and trust."
+      "We’ll perform a full-scale audit of your current systems, workflows, and revenue generation processes.",
+      "We’ll interview key stakeholders to uncover hidden bottlenecks and untapped opportunities.",
+      "You'll receive a crystal-clear, data-backed assessment of your biggest areas for improvement and how AI can solve them."
     ],
   },
   {
-    title: "Phase 2: System Design & Concept Validation",
-    description: "After establishing alignment, we shift into a strategic design phase. This step is all about creating a clear, actionable orangeprint for the systems we propose, while also providing upfront value to demonstrate feasibility.",
+    title: "Phase 2: Architect Your AI Powerhouse",
+    description: "This isn't about generic solutions; it's about engineering a custom-built AI system that's perfectly tailored to your unique needs. We'll map out a strategic blueprint to turn your business into a lead-generating, revenue-multiplying machine.",
     details: [
-      "Create a detailed system architecture and design.",
-      "Validate the concept with stakeholders to ensure alignment.",
-      "Provide a roadmap for implementation."
+      "We'll design a custom AI system architecture based on our findings from the discovery phase.",
+      "You’ll get a visual blueprint detailing every step of the process, from lead capture to customer conversion.",
+      "We’ll present a rock-solid ROI projection, showing you the *exact* financial impact our AI system will deliver."
     ],
   },
   {
-    title: "Phase 3: Implementation",
-    description: "With a proven concept in hand, we bring the full solution to life. This is where strategy becomes execution, and your custom system is integrated seamlessly into your operations.",
+    title: "Phase 3: Deploy & Dominate",
+    description: "Now it’s time to unleash the power. We'll build, test, and integrate your custom AI system seamlessly into your existing operations, ensuring a smooth transition and immediate results. This isn't just implementation; it's about domination.",
     details: [
-      "Develop and deploy the solution according to the agreed-upon specifications.",
-      "Conduct thorough testing to ensure quality and performance.",
-      "Provide training and support to your team."
+      "Our expert team will handle the entire development and deployment process, minimizing disruption to your business.",
+      "We'll conduct rigorous testing to ensure flawless performance and maximum ROI.",
+      "You'll receive comprehensive training and ongoing support to ensure you're maximizing the system's potential."
     ],
   },
   {
-    title: "Phase 4: Continued Partnership",
-    description: "Our work doesn't stop at implementation. We see this as the start of an ongoing partnership, where we work together to ensure your systems evolve with your business.",
+    title: "Phase 4: Optimize & Scale",
+    description: "We don't just set it and forget it. This is about continuous refinement and relentless pursuit of improvement. We'll constantly analyze performance, identify new opportunities, and scale your AI system to fuel unstoppable growth.",
     details: [
-      "Regularly review system performance and make necessary adjustments.",
-      "Provide ongoing support and updates.",
-      "Collaborate on future enhancements and innovations."
+      "We'll provide ongoing monitoring, maintenance, and optimization to ensure your AI system is always performing at its peak.",
+      "We’ll proactively identify new opportunities to leverage AI to drive further growth and efficiency.",
+      "You'll have a dedicated partner committed to maximizing the long-term ROI of your AI investment."
     ],
   },
 ];
@@ -65,7 +65,7 @@ export function OurProcess() {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-800 rounded-full items-center"
           ><span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2" />
-            <span className="text-[13px] text-gray-300">Process</span>
+            <span className="text-[13px] text-gray-300">Our Blueprint</span>
           </motion.div>
 
           <motion.h2
@@ -74,7 +74,7 @@ export function OurProcess() {
             transition={{ delay: 0.3 }}
             className="mt-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-white  "
           >
-            Our Proven Process
+            The Teros AI Domination Blueprint
           </motion.h2>
 
           <motion.p
@@ -83,7 +83,7 @@ export function OurProcess() {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg leading-8 text-gray-400"
           >
-            A systematic approach to transforming your business operations with AI
+            A battle-tested system for transforming your business with AI, guaranteed to deliver results.
           </motion.p>
         </motion.div>
 
@@ -102,7 +102,7 @@ export function OurProcess() {
                   className="mt-4 text-[#FFA500] flex items-center"
                 >
                   {expandedIndex === index ? <FaChevronUp /> : <FaChevronDown />}
-                  <span className="ml-2">{expandedIndex === index ? "Hide Details" : "Show Details"}</span>
+                  <span className="ml-2">{expandedIndex === index ? "Hide Details" : "See How We Dominate"}</span>
                 </button>
                 {expandedIndex === index && (
                   <ul className="mt-2 list-disc list-inside text-gray-400 pl-5">

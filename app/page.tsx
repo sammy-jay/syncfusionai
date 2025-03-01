@@ -39,7 +39,7 @@ export default function Home() {
             >
               <div className="inline-flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full border border-gray-800">
                 <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
-                <span className="text-sm text-gray-300">Automate. Accelerate. Achieve.</span>
+                <span className="text-sm text-gray-300"> Dominate Your Market. Outsmart the Competition.</span>
               </div>
             </motion.div>
 
@@ -52,10 +52,10 @@ export default function Home() {
             >
 
               <h1 className="text-5xl md:text-6xl font-bold">
-                <span className="text-white">We elevate your business</span>
+                <span className="text-white">Stop Leaving Money on the Table.</span>
               </h1>
               <h2 className=" text-5xl md:text-6xl font-bold text-white">
-                with <DynamicText delay={2500} words={['custom AI solutions', 'automated workflows', 'intelligent lead generation', ]} />
+                Unlock Revenue with <DynamicText delay={2500} words={['AI Sales Systems', 'Automated Outreach', 'Qualified Leads',]} />
               </h2>
             </motion.div>
 
@@ -64,9 +64,8 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="mt-6 text-center text-xl text-gray-400"
-            >
-              We elevate and grow organizations using top-tier Artificial Intelligence solutions.
+              className="mt-6 text-center text-xl text-gray-400">
+              Teros AI Solutions builds AI systems that generate qualified leads and convert them to customers.
             </motion.p>
 
             {/* CTA Button */}
@@ -80,13 +79,13 @@ export default function Home() {
                 href="#services"
                 className="transition-colors bg-transparent border-[1px] border-[#FFA500] text-white hover:text-black px-8 py-3 rounded-lg font-medium hover:bg-[#FFA500]/90"
               >
-                Our Services
+                Explore Services
               </Link>
               <Link
                 href="/contact"
                 className="bg-gradient-to-br from-[#FFA500] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#FFA500]/70 "
               >
-                Book A Call
+                Get a Strategy Session
               </Link>
             </motion.div>
 

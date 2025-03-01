@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
@@ -36,8 +36,8 @@ export function Mission() {
         <div
           className="absolute inset-0 bg-[radial-gradient(#111_1px,transparent_1px)] [background-size:24px_24px] opacity-25"
           style={{
-            maskImage: 'radial-gradient(circle at center, transparent 10%, black 90%)',
-            WebkitMaskImage: 'radial-gradient(circle at center, transparent 10%, black 90%)'
+            maskImage: "radial-gradient(circle at center, transparent 10%, black 90%)",
+            WebkitMaskImage: "radial-gradient(circle at center, transparent 10%, black 90%)"
           }}
         />
       </div>
@@ -47,9 +47,9 @@ export function Mission() {
         <motion.div className="text-center mb-20">
           <motion.div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-800 rounded-full">
             <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2" />
-            <span className="text-[12px] text-gray-300">Our Company</span>
+            <span className="text-[12px] text-gray-300">Our Foundation</span>
           </motion.div>
-          <h2 className="text-3xlmd: text-5xl font-medium mb-6 ">Who We Are</h2>
+          <h2 className="text-3xlmd: text-5xl font-medium mb-6 ">What We're Building</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 max-w-[800px] mx-auto gap-12">
@@ -72,10 +72,9 @@ export function Mission() {
                 className="rounded-2xl"
               />
             </div>
-            <h3 className="text-2xl font-medium mb-4">Vision</h3>
+            <h3 className="text-2xl font-medium mb-4">Our Vision</h3>
             <p className="text-gray-400 text-lg leading-relaxed">
-              To become a globally renowned brand that provides the most cost effective technology
-              products and solutions.
+              To be the premier AI solution provider, transforming B2B businesses into revenue-generating powerhouses across the globe.
             </p>
           </motion.div>
 
@@ -96,14 +95,13 @@ export function Mission() {
                 className="rounded-2xl"
               />
             </div>
-            <h3 className="text-2xl font-medium mb-4">Mission</h3>
+            <h3 className="text-2xl font-medium mb-4">Our Mission</h3>
             <p className="text-gray-400 text-lg leading-relaxed">
-              To continually provide our customers with efficient cost effective and affordable solutions
-              with the customer satisfaction as paramount.
+              To empower B2B companies with cutting-edge AI systems that drive explosive growth, maximize efficiency, and create lasting customer relationships.
             </p>
           </motion.div>
         </div>
       </div>
     </section>
   )
-} 
+}

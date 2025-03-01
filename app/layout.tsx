@@ -9,7 +9,7 @@ import { Navbar } from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Syncfusion AI",
+  title: "Teros AI",
   description: "Leading IT Solutions & Services Provider",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased`}>
+      <body>
         <Navbar />
         {children}
         <Script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" />

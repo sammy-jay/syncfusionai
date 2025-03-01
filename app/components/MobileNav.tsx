@@ -20,7 +20,7 @@ export function MobileNav() {
           href="/contact"
           className="bg-neutral-800 px-3 py-1.5 rounded-full text-xs text-white hover:bg-neutral-700 transition-all hover:scale-[1.02] active:scale-[0.98]"
         >
-          Let's Talk
+          Dominate Now
         </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -60,14 +60,14 @@ export function MobileNav() {
                 className="px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-neutral-800/50 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                Solutions
               </Link>
               <Link
                 href="/#process"
                 className="px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-neutral-800/50 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Our Process
+                Blueprint
               </Link>
 
               <Link
@@ -75,7 +75,7 @@ export function MobileNav() {
                 className="px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-neutral-800/50 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Works
+                Success
               </Link>
               <Link
                 href="/about-us"
@@ -90,7 +90,7 @@ export function MobileNav() {
                 className="block px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Let's Talk
+                Dominate Now
               </Link>
             </nav>
           </motion.div>
@@ -98,4 +98,4 @@ export function MobileNav() {
       </AnimatePresence>
     </div>
   )
-} 
+}

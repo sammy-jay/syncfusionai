@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 const footerLinks = [
-  { name: 'About Us', href: '/about-us' },
-  { name: 'Services', href: '/#services' },
-  { name: 'Contact', href: '/contact' },
-  { name: 'Mission', href: '/about-us#mission' },
-  { name: 'Team', href: '/about-us#team' }
+  { name: 'About', href: '/about-us' },
+  { name: 'Solutions', href: '/#services' },
+  { name: 'Blueprint', href: '/#process' },
+  { name: 'Results', href: '/#testimonials' },
+  { name: 'Contact', href: '/contact' }
 ]
 
 export function Footer() {
@@ -33,7 +33,7 @@ export function Footer() {
           className="flex justify-center mb-16"
         >
           <span className="text-2xl font-medium text-[#FFA500]">
-            Syncfusion AI
+            Teros AI
           </span>
         </motion.div>
 
@@ -42,17 +42,14 @@ export function Footer() {
           {/* Heading */}
           <div className="space-y-4 mb-8">
             <motion.h2 className=" text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
-              Transform Your
+              Ready to Dominate?
             </motion.h2>
-            <motion.h2 className=" text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
-              IT Infrastructure
-            </motion.h2>
+
           </div>
 
           {/* Description */}
           <motion.p className="text-gray-400 text-xl max-w-2xl mx-auto mb-16">
-            Partner with us for comprehensive technology solutions
-            that drive your business forward.
+            Transform your B2B business with AI solutions that deliver results.
           </motion.p>
 
           {/* CTA Button */}
@@ -67,7 +64,7 @@ export function Footer() {
               href="/contact"
               className="text-[#FFA500] text-xl font-medium hover:text-[#FFA500]/90 transition-colors"
             >
-              Book A Call
+              Book Your Strategy Session
             </Link>
           </motion.div>
 
@@ -101,10 +98,10 @@ export function Footer() {
             transition={{ delay: 0.6 }}
             className="text-gray-400 text-base"
           >
-            &copy; {new Date().getFullYear()} Syncfusion AI. All right reserved.
+            © {new Date().getFullYear()} Teros AI. All right reserved.
           </motion.div>
         </div>
       </div>
     </footer>
   )
-} 
+}

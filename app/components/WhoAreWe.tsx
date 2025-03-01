@@ -12,17 +12,17 @@ export const WhoAreWe = () => {
                     className="inline-flex items-center justify-center px-4 py-1.5 mb-8 border border-gray-800 rounded-full items-center"
                 >
                     <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2" />
-                    <span className="text-[13px] text-gray-300">Who Are We?</span>
+                    <span className="text-[13px] text-gray-300">Dominate With AI</span>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{delay: 0.2}}
+                    transition={{ delay: 0.2 }}
                     className="text-center mx-auto"
                 >
                     <p className="mt-4 leading-10 text-3xl md:text-4xl lg:text-5xl text-gray-300">
-                        Hi, we're Syncfusion AI ✨ We craft cutting edge AI solutions to make organizations more effective and competitive. We do so with a motivated team of 9 experts focused on building world-class solutions.
+                        Teros AI✨ engineers AI systems that transform B2B businesses into revenue-generating machines. We deliver real results, not hype. Gain your unfair advantage today.
                     </p>
                 </motion.div>
             </div>

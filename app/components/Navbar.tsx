@@ -16,20 +16,20 @@ export function Navbar() {
             href="/"
             className="text-[#FFA500] text-[18px] font-bold text-base hover:text-[#FFA500]/90 transition-colors"
           >
-            Syncfusion AI
+            Teros AI
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-6">
               <Link href="/#services" className={`text-[14px] ${activeSection === 'services' ? 'text-[#FFA500]' : 'text-gray-300'} hover:text-white transition-colors`}>
-                Services
+                Solutions
               </Link>
               <Link href="/#process" className={`text-[14px] ${activeSection === 'process' ? 'text-[#FFA500]' : 'text-gray-300'} hover:text-white transition-colors`}>
-                Our Process
+                Blueprint
               </Link>
-              <Link href="/#works" className={`text-[14px] ${activeSection === 'works' ? 'text-[#FFA500]' : 'text-gray-300'} hover:text-white transition-colors`}>
-                Works
+              <Link href="/#works" className={`text-[14px] ${activeSection === 'testimonials' ? 'text-[#FFA500]' : 'text-gray-300'} hover:text-white transition-colors`}>
+                Success
               </Link>
               <Link href="/about-us" className={`text-[14px] ${activeSection === 'about' ? 'text-[#FFA500]' : 'text-gray-300'} hover:text-white transition-colors`}>
                 About Us
@@ -41,7 +41,7 @@ export function Navbar() {
             href="/contact"
             className="hidden md:flex bg-neutral-800 px-4 py-1.5 rounded-full text-[14px] text-white hover:bg-neutral-700 transition-all hover:scale-[1.02] active:scale-[0.98] flex-row items-center"
           >
-            Let's Talk
+            Dominate Now
           </Link>
 
           {/* Mobile Navigation */}
@@ -50,4 +50,4 @@ export function Navbar() {
       </nav>
     </div>
   )
-} 
+}

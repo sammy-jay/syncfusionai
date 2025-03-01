@@ -2,84 +2,84 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import { FaShoppingCart, FaHome, FaBriefcase, FaPiggyBank, FaPlus } from 'react-icons/fa'; // Import necessary icons
+import { FaShoppingCart, FaHospital, FaIndustry, FaCode, FaUniversity, FaBriefcase, FaSearchDollar, FaUsers } from 'react-icons/fa'; // Import necessary icons
 
 const works = [
   {
-    title: "Sales",
-    description: "Automate lead generation and scoring based on CRM data.",
+    title: "AI Sales Domination",
+    description: "Turn your sales team into a closing machine. We automatically qualify prospects and deliver high-value leads.",
     icon: "📈",
     details: [
-      "Generate sales pitches and prepare meeting notes automatically.",
-      "Track progress through the pipeline and provide real-time analytics.",
-      "Schedule reminders to reduce no-shows and increase conversions.",
-      "Handle outbound sales calls to qualify leads."
+      "Hyper-personalized sales pitches.",
+      "Predictive deal scoring.",
+      "AI-powered follow-ups (no more missed opportunities).",
+      "AI Voice Agents for lead qualification."
     ]
   },
   {
-    title: "Customer Success",
-    description: "Automate onboarding workflows for new customers.",
+    title: "Revolutionize Customer Success",
+    description: "Turn support into a revenue engine. Instant, personalized support boosts satisfaction and reduces churn.",
     icon: "🤝",
     details: [
-      "Send proactive notifications for upselling or renewals.",
-      "Monitor customer feedback and suggest improvements.",
-      "Provide tailored recommendations based on user behavior.",
-      "Track customer health scores to reduce churn risk."
+      "Automated onboarding = immediate customer value.",
+      "AI identifies upsell/cross-sell opportunities.",
+      "Turn feedback into actionable improvements.",
+      "Predict churn + prevent it with targeted strategies."
     ]
   },
   {
-    title: "Human Resources",
-    description: "Automate job postings and manage applicant tracking systems (ATS).",
+    title: "Transform Your HR",
+    description: "Find top talent faster and slash recruiting costs. Automate hiring & free up your HR team.",
     icon: "👥",
     details: [
-      "Screen resumes and rank candidates based on requirements.",
-      "Schedule interviews and coordinate with managers seamlessly.",
-      "Generate onboarding checklists for new employees.",
-      "Create and share employee engagement and retention strategies."
+      "AI-powered resume screening & ranking.",
+      "Seamless interview scheduling.",
+      "Personalized onboarding checklists.",
+      "Analyze engagement to prevent retention risks."
     ]
   },
   {
-    title: "Operations",
-    description: "Keep workflows and data processes running smoothly with automation.",
+    title: "Supercharge Operations",
+    description: "Eliminate bottlenecks and unlock unprecedented efficiency. Automate tasks and gain real-time business visibility.",
     icon: "⚙️",
     details: [
-      "Track project milestones and send real-time status updates.",
-      "Provide performance summaries for departments and teams.",
-      "Automate routine tasks like reporting and system backups.",
-      "Identify inefficiencies and recommend optimized workflows."
+      "Automated project status updates.",
+      "Performance summaries for every team.",
+      "Routine task automation (reporting, backups).",
+      "AI-powered workflow optimization."
     ]
   },
   {
-    title: "Executive Support",
-    description: "Create daily schedules with tasks, deadlines, and meeting reminders.",
+    title: "Empower Executives",
+    description: "Data-driven insights for confident decisions. Automate data collection and empower executives to focus on growth.",
     icon: "📅",
     details: [
-      "Manage inboxes and ensure critical messages are prioritized.",
-      "Coordinate meeting schedules and handle follow-ups.",
-      "Automate report generation for key business performance metrics.",
-      "Retrieve and organize data for executive decision-making."
+      "Automated daily schedules & reminders.",
+      "Prioritized inboxes (never miss what matters).",
+      "Seamless meeting coordination.",
+      "Real-time performance reports."
     ]
   },
   {
-    title: "Finance and Admin",
-    description: "Automate invoice generation and payment reminders.",
+    title: "Revolutionize Finance",
+    description: "Automate finance and admin tasks. Reduce errors and free your team for strategic priorities.",
     icon: "💰",
     details: [
-      "Track expenses, profits, and budget forecasts in real time.",
-      "Prepare financial reports and provide tax-related summaries.",
-      "Monitor cash flow and alert for unusual activity.",
-      "Set up workflows for approvals and expense reimbursements."
+      "Automated invoice generation & payment reminders.",
+      "Real-time expense, profit, & budget visibility.",
+      "Effortless financial reports & tax summaries.",
+      "Cash flow monitoring + unusual activity alerts."
     ]
   },
   {
-    title: "Marketing",
-    description: "Conduct in-depth audience and competitor research 24/7.",
+    title: "AI-Powered Marketing Domination",
+    description: "Stop guessing and start dominating. We leverage AI to personalize campaigns and drive explosive growth.",
     icon: "📊",
     details: [
-      "Create, schedule, and post engaging content tailored to your brand.",
-      "Respond instantly to customer messages on social media or email.",
-      "Generate innovative campaign ideas to stay ahead of market trends.",
-      "Provide detailed performance reports with suggestions for improvement."
+      "24/7 audience & competitor research.",
+      "Personalized content creation & scheduling.",
+      "Instant social & email responses.",
+      "Campaign optimization based on real-time data."
     ]
   },
 ];
@@ -169,37 +169,68 @@ export function WorkShowcase() {
             </div>
             <span className="mt-2 ml-2 text-sm">E-commerce</span>
           </div>
+
           <div className="flex items-center text-gray-300 flex-col">
             <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
               <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
-                <FaHome className="text-3xl" />
+                <FaIndustry className="text-3xl" />
               </div>
             </div>
-            <span className="mt-2 ml-2 text-sm">Real Estate</span>
+            <span className="mt-2 ml-2 text-sm">Manufacturing</span>
           </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaCode className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Tech/Software</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaUniversity className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Education</span>
+          </div>
+
           <div className="flex items-center text-gray-300 flex-col">
             <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
               <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
                 <FaBriefcase className="text-3xl" />
               </div>
             </div>
-            <span className="mt-2 ml-2 text-sm">Legal</span>
+            <span className="mt-2 ml-2 text-sm">Professional Services</span>
           </div>
+
           <div className="flex items-center text-gray-300 flex-col">
             <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
               <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
-                <FaPiggyBank className="text-3xl" />
+                <FaSearchDollar className="text-3xl" />
               </div>
             </div>
-            <span className="mt-2 ml-2 text-sm">Finance</span>
+            <span className="mt-2 ml-2 text-sm">Financial Services</span>
           </div>
+
           <div className="flex items-center text-gray-300 flex-col">
             <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
               <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
-                <FaPlus className="text-3xl" />
+                <FaHospital className="text-3xl" />
               </div>
             </div>
             <span className="mt-2 ml-2 text-sm">Healthcare</span>
+          </div>
+
+          <div className="flex items-center text-gray-300 flex-col">
+            <div className='p-2 rounded-lg border-gray-900 border-[1px] cursor-pointer hover:scale-105 transition duration-300'>
+              <div className='bg-[#0a0a0a] rounded-lg p-4 border-gray-900 border-[1px]'>
+                <FaUsers className="text-3xl" />
+              </div>
+            </div>
+            <span className="mt-2 ml-2 text-sm">Staffing/Recruiting</span>
           </div>
         </div>
       </div>

@@ -1,46 +1,44 @@
 'use client'
 
 import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 import { FaCheck } from 'react-icons/fa'; // Import checkmark icon
 
 const pricingPlans = [
   {
-    title: "Basic",
-    price: "$997/month",
-    description: "For organizations looking to get started with AI & automations.",
+    title: "AI Pilot Program",
+    price: "$4,997/month",
+    description: "Test the waters and experience the power of AI with a focused, high-impact solution. Ideal for proving ROI and getting quick wins.",
     features: [
-      "1 dedicated developer",
-      "Custom workflow automations",
-      "AI business consulting",
-      "Chatbot & LLM development",
-      "Voice Assistant development",
-      "Cancel & pause anytime"
+      "Dedicated AI Specialist (Part-Time)",
+      "1 Core AI-Powered Automation",
+      "Lead Qualification & Prioritization",
+      "Weekly Performance Reporting",
+      "Month-to-Month Flexibility"
     ]
   },
   {
-    title: "Professional",
-    price: "$3997/month",
-    description: "For organizations looking to unlock the full power of AI & automations.",
+    title: "AI Growth Engine",
+    price: "$9,997/month",
+    description: "Fuel explosive growth with a comprehensive AI system designed to outpace your competition.",
     features: [
-      "2 dedicated developers",
-      "Custom workflow automations",
-      "AI business consulting",
-      "Chatbot & LLM development",
-      "Voice Assistant development",
-      "Cancel & pause anytime"
+      "Dedicated AI Specialist (Full-Time)",
+      "Up to 3 AI-Powered Automations",
+      "Voice AI Agents for Lead Qualification",
+      "Personalized Email Nurturing Campaigns",
+      "A/B Testing & Optimization"
     ]
   },
   {
-    title: "Enterprise",
-    price: "Custom/month",
-    description: "For large organizations requiring advanced AI solutions.",
+    title: "AI Enterprise Domination",
+    price: "Custom Pricing",
+    description: "Dominate your industry with a fully customized AI system tailored to your unique needs and scale.",
     features: [
-      "X dedicated developers",
-      "Custom workflow automations",
-      "AI business consulting",
-      "Chatbot & LLM development",
-      "Voice Assistant development",
-      "Cancel & pause anytime"
+      "Dedicated AI Team (Scalable)",
+      "Unlimited AI-Powered Automations",
+      "Custom AI Agent Development",
+      "Predictive Analytics & Reporting",
+      "Priority Support & Implementation"
     ]
   },
 ];
@@ -60,7 +58,7 @@ export function Pricing() {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-800 rounded-full items-center"
           ><span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2" />
-            <span className="text-[13px] text-gray-300">Pricing</span>
+            <span className="text-[13px] text-gray-300">Dominate the Market</span>
           </motion.div>
 
           <motion.h2
@@ -69,7 +67,7 @@ export function Pricing() {
             transition={{ delay: 0.3 }}
             className="mt-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-white  "
           >
-            Pricing Plans
+            Choose Your AI Domination Plan
           </motion.h2>
 
           <motion.p
@@ -78,7 +76,7 @@ export function Pricing() {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg leading-8 text-gray-400"
           >
-            Three flexible plans designed to fit your needs. Whether you're just starting with AI & automations, or scaling advanced solutions          </motion.p>
+            Three strategic tiers designed to catapult your business ahead of the competition. Scale AI solutions as you grow.  All plans offer great value and ROI.        </motion.p>
         </motion.div>
 
 
@@ -104,7 +102,7 @@ export function Pricing() {
                   ))}
                 </ul>
                 <button className={`mt-3 text-white px-4 py-2 rounded-lg hover:bg-[#FFA500]/90 transition-colors border-[1px] ${index == 1 ? "bg-[#FFA500] hover:bg-transparent border-transparent hover:border-[#FFA500]" : "bg-transparent border-[#FFA500]"}`}>
-                  Book a Call
+                  Schedule a Strategy Call
                 </button>
               </motion.div>
             </div>

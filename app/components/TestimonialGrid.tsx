@@ -5,27 +5,27 @@ import Image from 'next/image'
 
 const testimonials = [
   {
-    logo: 'NMRC',
-    quote: "Their expertise in IT infrastructure management has been invaluable to our operations.",
+    logo: 'Acme Corp',
+    quote: "Teros AI's sales solutions have generated a massive ROI for our company. We're closing deals faster and more efficiently than ever before.",
     author: {
       name: 'Sarah Johnson',
-      role: 'IT Director'
+      role: 'VP of Sales'
     }
   },
   {
-    logo: 'DeltaTek Global',
-    quote: "Exceptional service delivery and technical support that keeps our systems running smoothly.",
+    logo: 'GlobalTech Solutions',
+    quote: "Their AI-powered customer support has transformed our business, providing exceptional service and boosting customer loyalty.",
     author: {
       name: 'Michael Chen',
-      role: 'Operations Manager'
+      role: 'Customer Success Manager'
     }
   },
   {
-    logo: 'Chevron',
-    quote: "A reliable technology partner that understands enterprise-level IT requirements.",
+    logo: 'Innovate Marketing',
+    quote: "Teros AI's marketing solutions have helped us laser-target our audience and achieve explosive revenue growth. Highly recommended!",
     author: {
       name: 'David Williams',
-      role: 'Infrastructure Lead'
+      role: 'Marketing Director'
     }
   }
 ]
@@ -84,4 +84,4 @@ export function TestimonialGrid() {
       </div>
     </section>
   )
-} 
+}

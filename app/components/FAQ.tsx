@@ -5,20 +5,36 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "What IT services do you provide?",
-    answer: "At Syncfusion AI, we offer a comprehensive range of IT services including enterprise software solutions, OEM software licensing, hardware procurement, network infrastructure, IT security audits, web development, and ongoing technical support."
+    question: "What results can I expect from Teros AI Solutions?",
+    answer: "Our clients typically experience a 3x increase in qualified leads, a 50% reduction in sales cycle time, and a significant boost in overall revenue. We engineer AI systems that deliver measurable ROI."
   },
   {
-    question: "How do you ensure data security?",
-    answer: "We implement industry-leading security protocols, regular security audits, and maintain compliance with international data protection standards to ensure your business data remains secure."
+    question: "What makes Teros AI different from other AI companies?",
+    answer: "We're not just AI consultants; we're builders. We don't just recommend solutions, we engineer custom AI systems tailored to your specific business needs. Our focus is on driving tangible results, not just implementing the latest technology."
   },
   {
-    question: "What industries do you serve?",
-    answer: "We serve various sectors including Education, Telecommunications, Banking, Insurance, and Small and Medium Scale enterprises, providing tailored IT solutions for each industry's specific needs."
+    question: "What industries do you specialize in?",
+    answer: "We have a proven track record of success across a range of B2B industries, including Tech, Healthcare, Finance, Manufacturing, and Professional Services. Our expertise is in applying AI to solve common B2B challenges, regardless of industry."
   },
   {
-    question: "What is your support process?",
-    answer: "We provide 24/7 technical support with dedicated account managers, regular maintenance schedules, and rapid response times for critical issues."
+    question: "Can I integrate Teros AI Solutions with my existing systems?",
+    answer: "Yes! Our AI systems are designed to seamlessly integrate with your existing CRM, marketing automation, and other critical business tools. We handle the entire integration process, ensuring a smooth transition and minimal disruption."
+  },
+  {
+    question: "How do you ensure the security of my data?",
+    answer: "Data security is our top priority. We employ industry-leading security protocols, conduct regular security audits, and adhere to strict data privacy standards to protect your sensitive information."
+  },
+  {
+    question: "How much does it cost?",
+    answer: "Our pricing varies depending on the complexity of the AI system and the level of ongoing support required. We offer tiered pricing plans to fit different budgets and needs. Contact us for a custom quote."
+  },
+  {
+    question: "What kind of support do you offer?",
+    answer: "We offer comprehensive support, including dedicated account managers, ongoing system monitoring, and rapid response times for critical issues. We're committed to your long-term success."
+  },
+  {
+    question: "How long does it take to see results?",
+    answer: "While the exact timeline varies depending on the scope of the project, many of our clients begin seeing positive results within the first few months of implementation. We focus on delivering quick wins and demonstrable ROI."
   }
 ]
 
@@ -37,7 +53,7 @@ export function FAQ() {
         >
           <div className="inline-flex items-center justify-center items-center px-4 py-1.5 mb-6 border border-gray-800 rounded-full">
             <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2" />
-            <span className="text-[12px] text-gray-300">Need to Know</span>
+            <span className="text-[12px] text-gray-300">Still Have Questions?</span>
           </div>
         </motion.div>
 
@@ -117,4 +133,4 @@ export function FAQ() {
       </div>
     </section>
   )
-} 
+}
