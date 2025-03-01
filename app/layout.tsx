@@ -24,8 +24,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" />
-        {/* <Script src="/chatbot.js" /> */}
-        <Script src="/callbot.js"/>
+        <Script src="/chatbot.js" />
+        {/* <Script src="/callbot.js"/> */}
       </body>
     </html>
   );
