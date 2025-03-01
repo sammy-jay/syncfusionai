@@ -116,7 +116,7 @@ export function Testimonials() {
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="flex flex-col justify-center mr-4 lg:border-r-[2px] lg:border-gray-800/70"
+                className="flex flex-col justify-center mr-4 pr-1 lg:border-r-[2px] lg:border-gray-800/70"
               >
                 {/* Company Logo */}
                 <motion.div
@@ -128,7 +128,7 @@ export function Testimonials() {
                   <div className="w-8 h-8 bg-[#FFA500] rounded-lg flex items-center justify-center">
                     <div className="w-4 h-4 bg-black/90 rounded-sm" />
                   </div>
-                  <span className="text-xl font-medium">{testimonial1.company.name}</span>
+                  <span className="text-2xl font-medium">{testimonial1.company.name}</span>
                 </motion.div>
 
                 {/* Quote */}
@@ -137,7 +137,7 @@ export function Testimonials() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
-                  className="text-2xl md:text-3xl font-medium leading-tight mb-12"
+                  className="text-xl md:text-2xl font-medium leading-tight mb-12"
                 >
                   {testimonial1.quote}
                 </motion.blockquote>
@@ -196,7 +196,7 @@ export function Testimonials() {
                   <div className="w-8 h-8 bg-[#FFA500] rounded-lg flex items-center justify-center">
                     <div className="w-4 h-4 bg-black/90 rounded-sm" />
                   </div>
-                  <span className="text-xl font-medium">{testimonial2.company.name}</span>
+                  <span className="text-2xl font-medium">{testimonial2.company.name}</span>
                 </motion.div>
 
                 {/* Quote */}
@@ -205,7 +205,7 @@ export function Testimonials() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
-                  className="text-2xl md:text-3xl font-medium leading-tight mb-12"
+                  className="text-xl md:text-2xl font-medium leading-tight mb-12"
                 >
                   {testimonial2.quote}
                 </motion.blockquote>

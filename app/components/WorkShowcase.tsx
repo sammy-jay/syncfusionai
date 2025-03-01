@@ -85,61 +85,18 @@ const works = [
 ];
 
 export function WorkShowcase() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const scrollInterval = setInterval(() => {
-      if (scrollRef.current) {
-        scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' }); // Adjust scroll amount as needed
-      }
-    }, 2500); // Adjust the interval as needed
-
-    return () => clearInterval(scrollInterval);
-  }, []);
-
   return (
     <section className="py-16">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex overflow-hidden">
+      <div className="mx-auto max-w-7xl px-2 lg:px-8">
+        <div className="flex overflow-auto hide-scrollbar scroll-smooth">
           <motion.div
-            className="flex gap-4 md:gap-8 px-8"
-            animate={{
-              x: [0, -1935]
-            }}
-            transition={{
-              x: {
-                duration: 150,
-                repeat: Infinity,
-                ease: "linear"
-              }
-            }}
+            className="flex gap-4 md:gap-8 px-2"
           >
             {/* First set of logos */}
             {works.map((work, index) => (
               <motion.div
                 key={index}
-                className="bg-[#0a0a0a] py-6 px-3 md:p-6 rounded-lg flex flex-col w-[350px] md:min-w-[350px]" // Increased width
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="flex items-center mb-4">
-                  <div className="text-3xl mr-2">{work.icon}</div>
-                  <h3 className="text-xl font-bold text-white">{work.title}</h3>
-                </div>
-                <p className="text-gray-400">{work.description}</p>
-                <ul className="mt-2 list-disc list-inside text-gray-400 pl-3">
-                  {work.details.map((detail, i) => (
-                    <li key={i}>{detail}</li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {works.map((work, index) => (
-              <motion.div
-                key={index}
-                className="bg-[#0a0a0a] p-6 rounded-lg flex flex-col min-w-[350px]" // Increased width
+                className="bg-[#0a0a0a] cursor-pointer py-6 px-3 md:p-6 rounded-lg flex flex-col w-[300px] md:min-w-[330px]" // Increased width
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}

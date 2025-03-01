@@ -39,7 +39,7 @@ export default function Home() {
             >
               <div className="inline-flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full border border-gray-800">
                 <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
-                <span className="text-sm text-gray-300 text-center"> Dominate Your Market. Outsmart the Competition.</span>
+                <span className="text-sm text-gray-300 text-center"> We'll build your next AI employee</span>
               </div>
             </motion.div>
 

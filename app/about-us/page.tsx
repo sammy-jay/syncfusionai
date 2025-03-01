@@ -8,7 +8,7 @@ import { Team } from '../components/Team'
 
 const stats = [
   { value: "3X+", label: "Revenue Growth for Clients" },
-  { value: "15+", label: "Years Experience" },
+  { value: "3+", label: "Years Experience" },
   { value: "24/7", label: "Lead Qualification" },
   { value: "100% ", label: "Personalized AI Solutions" }
 ]

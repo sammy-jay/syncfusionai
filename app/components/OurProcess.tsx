@@ -7,7 +7,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Import icons
 const phases = [
   {
     title: "Phase 1: Diagnose & Discover",
-    description: "Before we write a single line of code, we become intimately familiar with your business. We'll dissect your current processes, identify profit leaks, and pinpoint the *exact* areas where AI can create exponential growth.",
+    description: "Before we write a single line of code, we become intimately familiar with your business. We'll dissect your current processes, identify profit leaks, and pinpoint the exact areas where AI can create exponential growth.",
     details: [
       "We’ll perform a full-scale audit of your current systems, workflows, and revenue generation processes.",
       "We’ll interview key stakeholders to uncover hidden bottlenecks and untapped opportunities.",
@@ -20,7 +20,7 @@ const phases = [
     details: [
       "We'll design a custom AI system architecture based on our findings from the discovery phase.",
       "You’ll get a visual blueprint detailing every step of the process, from lead capture to customer conversion.",
-      "We’ll present a rock-solid ROI projection, showing you the *exact* financial impact our AI system will deliver."
+      "We’ll present a rock-solid ROI projection, showing you the exact financial impact our AI system will deliver."
     ],
   },
   {

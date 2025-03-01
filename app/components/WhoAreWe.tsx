@@ -62,13 +62,13 @@ export const WhoAreWe = () => {
                             if (highlightIndex + wordsPerHighlight > words.length) {
                                 if (index <= wrappedIndex) {
                                     return (
-                                        <span key={index} className={shouldHighlight ? 'text-[#000000] bg-[#FFA500] rounded-sm transition-all duration-300' : ''}>
+                                        <span key={index} className={shouldHighlight ? 'text-[#000000] bg-[#FFA500]/70 rounded-sm transition-all duration-300' : ''}>
                                             {word}{' '}
                                         </span>)
                                 }
                             }
                             return (
-                                <span key={index} className={shouldHighlight ? 'text-[#000000] bg-[#FFA500] rounded-sm transition-all duration-300' : ''}>
+                                <span key={index} className={shouldHighlight ? 'text-[#000000] bg-[#FFA500]/70 rounded-xs transition-all duration-300' : ''}>
                                     {word}{' '}
                                 </span>
                             )
