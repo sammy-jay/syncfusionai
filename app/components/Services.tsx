@@ -8,19 +8,19 @@ type ServiceKey = keyof typeof serviceImages;
 
 const services: { title: string; description: string; icon: string; key: ServiceKey }[] = [
   {
-    title: 'AI Lead Generation & Scoring: Fuel Your Sales Pipeline',
+    title: 'AI-Powered Lead Generation & Scoring: Fuel Your Sales Pipeline',
     description: "Generate high-quality leads and prioritize your sales efforts with AI. We identify your ideal customers and score them based on their likelihood to convert, ensuring your team focuses on the hottest prospects.",
     icon: '💬',
     key: 'chatbot'
   },
   {
-    title: 'Voice AI: 24/7 Lead Qualification & Appointment Booking',
+    title: 'Voice AI Agents: 24/7 Lead Qualification & Appointment Booking',
     description: "Stop cold calling and let AI do the heavy lifting. Our Voice AI Agents engage prospects, qualify their interest, and automatically book qualified leads onto your team's calendar – 24/7.",
     icon: '🎤',
     key: 'voice'
   },
   {
-    title: 'Personal Email Automation & Nurturing: Convert Leads to Customers',
+    title: 'Personalized Email Automation & Nurturing: Convert Leads to Customers',
     description: "Turn leads into paying customers with personalized email sequences. We craft compelling email campaigns that nurture relationships, build trust, and drive conversions, maximizing your ROI.",
     icon: '⚙️',
     key: 'workflow'
@@ -156,8 +156,7 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="group relative rounded-[10px] md:rounded-[24px] overflow-hidden bg-[#0a0a0a] border border-gray-800/30 p-2 py-4 md:p-4"
-            >
+              >
               <div className="relative h-64 lg:h-64 w-full overflow-hidden rounded-md md:rounded-xl mb-6">
                 <Image
                   src={serviceImages[service.key]}

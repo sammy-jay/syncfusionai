@@ -15,7 +15,7 @@
 body {
   background-color: #000;
   color: white;
-  background-image: radial-gradient(circle, rgba(255, 140, 0, 0.2) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(255, 140, 0, 0.5) 1px, transparent 1px);
   background-size: 20px 20px;
   font-family: "Archivo", serif;
   font-optical-sizing: auto;
